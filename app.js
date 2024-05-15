@@ -24,6 +24,10 @@ app.use((req,res,next)=>{
     }
   ))
 
+  app.get('/', (req, res) => {
+    res.send('Hello World!')
+  })
+
 // checkout api
 app.post("/api/create-checkout-session",async(req,res)=>{
     console.log("hittted")
