@@ -7,7 +7,7 @@ const stripe = require("stripe")("sk_test_51PG1tYJAAxwzjlgZ8vRTNPPWoSxToyPoV5ZZo
 app.use(express.json());
 
 app.use((req,res,next)=>{
-    res.setHeader("Access-Control-Allow-Origin","https://food-frontend-sand.vercel.app");
+    res.setHeader("Access-Control-Allow-Origin","https://cart-redux-frontend.vercel.app");
     res.header(
       "Access-Control-Allow-Headers",
       "Origin, X-Requested-With, Content-Type, Accept"
@@ -18,7 +18,7 @@ app.use((req,res,next)=>{
   
   app.use(cors(
     {
-      origin: ["https://food-frontend-sand.vercel.app"],
+      origin: ["https://cart-redux-frontend.vercel.app"],
       methods: ["POST", "GET"],
       credentials: true
     }
